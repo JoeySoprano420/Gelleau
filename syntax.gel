@@ -89,6 +89,7 @@ while (condition) {
 
 
 
+
 Grammar Breakdown
 Component	Syntax	Example
 Variable Declaration	must/mutable var_name: type = value;	mutable x: int64 = 42;
