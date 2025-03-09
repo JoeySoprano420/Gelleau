@@ -31,3 +31,34 @@ gc_policy = "manual";
 Register-Locked Execution
 
 must reg_x: register64 = 0x10;
+
+
+
+Explicit Variable Declaration:
+
+must x: int64 = 10;  # Immutable  
+mutable y: int64 = 20;  # Mutable  
+
+
+
+
+Direct Register Execution:
+
+must reg_x: register64 = 0x10;
+
+
+
+
+User-Controlled Garbage Collection:
+
+gc_policy = "manual";
+
+
+
+
+Unexecuted Code is Deferred, Isolated, and Deleted:
+
+defer {
+    unused_code();
+};
+
