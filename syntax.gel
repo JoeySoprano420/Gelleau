@@ -60,3 +60,28 @@ pipeline {
     };
 };
 
+
+
+
+
+Command + Type + Value + End-of-Statement:
+
+command type variable = value;
+
+Function Definition:
+
+func_name(param1: type, param2: type) -> return_type {
+    instructions;
+};
+
+Control Structures:
+
+if (condition) {
+    action;
+};
+
+Looping:
+
+while (condition) {
+    repeated_action;
+};
