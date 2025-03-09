@@ -1,0 +1,33 @@
+Key Language Rules:
+
+
+
+All Blocks End with ;
+
+if (x > 10) { y = 20; };
+
+
+
+
+Functions Must Define a Return Type
+
+sum(a: int64, b: int64) -> int64 { return a + b; };
+
+
+
+
+Unexecuted Code Is Isolated, Deferred, Omitted, and Deleted
+
+defer {
+    unused_code();
+};
+
+
+
+
+Garbage Collection Is User-Controlled
+
+gc_policy = "manual";
+Register-Locked Execution
+
+must reg_x: register64 = 0x10;
