@@ -1,0 +1,13 @@
+# Define LLVM IR function directly in Gelleau
+llvm_ir("sum", (int64, int64) -> int64) {
+    r0 = arg(0);
+    r1 = arg(1);
+    return r0 + r1;
+}
+
+# Inline Assembly Hook
+asm {
+    mov rax, 5;
+    add rax, 10;
+    ret;
+}
