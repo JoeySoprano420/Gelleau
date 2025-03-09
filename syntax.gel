@@ -36,3 +36,27 @@ omit {
 delete {
     old_buggy_code();
 }
+
+
+
+
+# Define function
+sum(a: int64, b: int64) -> int64 {
+    return a + b;
+};
+
+# Inline Assembly
+asm {
+    mov rax, 5;
+    add rax, 10;
+    ret;
+};
+
+# Pipeline Execution
+pipeline {
+    x = compute(5, 10);
+    defer {
+        unused_code();
+    };
+};
+
