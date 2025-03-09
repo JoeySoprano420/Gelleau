@@ -1,0 +1,23 @@
+# Define a function
+sum(a, b) -> (a + b);
+
+# Conditional logic
+if x > 10; {
+    print("High");
+} else {
+    print("Low");
+}
+
+# Looping (register-optimized iteration)
+while r0 < 100; {
+    r0 += 5;
+}
+
+# Memory persistence directives
+memflag { temp:x, perm:y };
+
+# Hook inline assembly
+asm("mov r0, r1");
+
+# Active Comment Execution
+*/ TODO: Optimize loop further (log-time complexity) */
