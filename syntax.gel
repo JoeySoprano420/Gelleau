@@ -21,3 +21,18 @@ asm("mov r0, r1");
 
 # Active Comment Execution
 */ TODO: Optimize loop further (log-time complexity) */
+
+# Deferred execution (code flagged as low-priority)
+defer {
+    calculate_heavy_process();
+}
+
+# Omitting unused code
+omit {
+    legacy_function();
+}
+
+# Deleted code (compiler enforces cleanup)
+delete {
+    old_buggy_code();
+}
