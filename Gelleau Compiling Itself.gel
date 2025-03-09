@@ -1,0 +1,7 @@
+# Pipeline-optimized function
+pipeline(opt) {
+    x = fast_exec(complex_calc());
+    defer {
+        unused_code();
+    }
+}
